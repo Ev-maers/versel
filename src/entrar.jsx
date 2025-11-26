@@ -1,14 +1,19 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./entrar.module.css";
 
 export function Entrar() {
   const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Usuário: ${usuario}\nSenha: ${senha}`);
-    // Aqui entraria a lógica de autenticação
+    // Simples autenticação local: armazenar usuário em localStorage
+    // (em app real, trocar por chamada ao backend)
+    localStorage.setItem("user", usuario || "user");
+    // redireciona para a página inicial
+    navigate("/");
   };
 
   return (
@@ -35,7 +40,9 @@ export function Entrar() {
             required
           />
         </label>
-        <button type="submit" className={styles.botao}>Entrar</button>
+        <button type="submit" className={styles.botao}>
+          Entrar
+        </button>
       </form>
     </div>
   );

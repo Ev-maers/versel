@@ -8,8 +8,8 @@ export default function handler(req, res) {
 
   // 2. Respondemos com status 200 (OK) e um JSON
   return res.status(200).json({
-    projeto: "Origens",
-    status: "Online 🟢",
+    projeto: "Origens\n",
+    status: "Online 🟢\n",
     mensagem: "Esta resposta veio do servidor da Vercel!",
     horario_brasil: dataServidor,
   });
