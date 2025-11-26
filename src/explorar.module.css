@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.container {
+    padding: 2rem;
+    background-color: #f4c8a4;
+    font-family: 'Marcellus', serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: #6b2d17;
+    font-family: 'Marcellus', serif;
+}
+
+.filtros {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.botaoFiltro {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #6b2d17;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botaoFiltro:hover {
+    background-color: #ffe0c7;
+}
+
+.selecionado {
+    background-color: #6b2d17;
+    color: white;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: 230px;  /* ⬅️ Largura fixa */
+    height: 340px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imagem {
+    width: 100%;
+    max-width: 250px; /* ⬅️ Limita o tamanho máximo */
+    height: 180px;    /* ⬅️ Mantém altura consistente */
+    object-fit: cover; /* ⬅️ Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 8px;
+    margin: 0 auto;   /* ⬅️ Centraliza horizontalmente */
+    display: block;
+}
+
+
+.nome {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #5c3c1e;
+    font-family: 'Marcellus', serif;
+}
+
+.preco {
+    background: #d9b9a3;
+    color: #5c2e0f;
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.tamanhos {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tamanhos span {
+    background: #d9b9a3;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #6b2d17;
+    background-color: #fff;
+    color: #6b2d17;
+    font-family: 'Marcellus', serif;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #6b2d17;
+}
+
+.filtro label {
+    margin-bottom: 4px;
+    color: #6b2d17;
+    font-weight: bold;
+    font-family: 'Marcellus', serif;
+}
+
+.topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.entrar {
+    padding: 8px 16px;
+    background-color: #6b2d17;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.entrar:hover {
+    background-color: #91422a;
+}
+
+.cadastrar {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #6b2d17;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+
+}
+
+.cadastrar:hover {
+    background-color: #ffe0c7;
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.container {
+    padding: 2rem;
+    background-color: #f4c8a4;
+    min-height: 100vh;
+    font-family: 'Marcellus', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: #6b2d17;
+}
+
+.mensagemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.mensagem {
+    color: #6b2d17;
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 0.75rem;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.continuar {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #6b2d17;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.continuar:hover {
+    background-color: #5a2612;
+}
+
+.adicionar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.adicionar input {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #6b2d17;
+    font-family: 'Marcellus', serif;
+    width: 160px;
+}
+
+.adicionar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b2d17;
+    transition: transform 0.2s;
+}
+
+.adicionar button:hover {
+    transform: scale(1.2);
+}
+
+.vazio {
+    font-size: 1.2rem;
+    color: #5c3c1e;
+}
+
+.lista {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe0c7;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nome {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #6b2d17;
+}
+
+.preco {
+    color: #5c3c1e;
+    font-size: 0.9rem;
+}
+
+.inputQuantidade {
+    margin-left: 0.5rem;
+    width: 60px;
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #6b2d17;
+    font-family: 'Marcellus', serif;
+}
+
+.remover {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b2d17;
+    transition: transform 0.2s;
+}
+
+.remover:hover {
+    transform: scale(1.2);
+}
+
+.total {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #5c3c1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finalizar {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #6b2d17;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.finalizar:hover {
+    background-color: #5a2612;
+}
+
+.topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.entrar {
+    padding: 8px 16px;
+    background-color: #6b2d17;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.entrar:hover {
+    background-color: #91422a;
+}
+
+
+.cadastrar {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #6b2d17;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+
+}
+
+.cadastrar:hover {
+    background-color: #ffe0c7;
+}
+
+.usuarioLogado {
+  background-color: #D2A679;     /* tom marrom escuro elegante */
+  color: #6b2d17;                /* bege claro para contraste */
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: 'Marcellus', serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d2a679;     /* borda dourada suave */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.usuarioLogado:hover {
+  transform: scale(1.05);
+}

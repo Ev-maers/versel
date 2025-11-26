@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.aboutContainer {
+    padding: 40px 20px;
+    background-color: #fff3e8;
+    border-top: 1px solid #e0d6cb;
+    border-bottom: 1px solid #e0d6cb;
+    color: #5c3c1e;
+    font-family: 'Marcellus', serif;
+    position: relative;
+}
+
+.aboutTitulo {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #6b2d17;
+    font-weight: bold;
+}
+
+.aboutTexto {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: #5c3c1e;
+}
+

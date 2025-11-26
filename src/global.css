@@ -1,0 +1,183 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte base */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcd7b1; /* tom pêssego suave */
+    color: #5c2e0f; /* marrom escuro */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #d1a97f; /* marrom claro */
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  .sidebar nav p {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 6px;
+  }
+  
+  .sidebar button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .sidebar button:hover {
+    background-color: #ffdab0;
+  }
+  
+  /* Botão de toggle */
+  .toggle-button {
+    background-color: #f4a261;
+    border: none;
+    padding: 10px;
+    margin: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .toggle-button:hover {
+    background-color: #e98c3c;
+  }
+  
+  /* Botões superiores (Entrar, Cadastrar) */
+  .top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .top-buttons button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .top-buttons .entrar {
+    background-color: #eacbb1;
+    color: #5c2e0f;
+  }
+  
+  .top-buttons .cadastrar {
+    background-color: #c26b2f;
+    color: white;
+  }
+  
+  /* Campo de busca e seleção */
+  .search-container {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .search-container input,
+  .search-container select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 300px;
+  }
+
+  /* Layout principal com sidebar + conteúdo */
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    justify-content: center;
+  
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  /*botões */
+
+  /* Estilo base para todos os botões */
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+  }
+  
+  /* Botão claro (ex: menu lateral) */
+  .button-light {
+    background-color: #ffffff;
+    color: #5c2e0f; /* marrom escuro */
+  }
+  
+  .button-light:hover {
+    background-color: #ffdab0; /* tom pastel claro ao passar o mouse */
+  }
+  
+  /* Botão escuro (ex: CADASTRAR no topo) */
+  .button-dark {
+    background-color: #c26b2f; /* marrom queimado */
+    color: white;
+  }
+  
+  .button-dark:hover {
+    background-color: #a95825;
+  }
+  
+  /* Botão neutro (ex: ENTRAR no topo) */
+  .button-neutral {
+    background-color: #eacbb1; /* tom bege */
+    color: #5c2e0f;
+  }
+  
+  .button-neutral:hover {
+    background-color: #d9b59d;
+  }
+  
+  /* Ícone dentro do botão */
+  .button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  

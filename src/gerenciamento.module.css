@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.container {
+    background-color: #f4c8a4;
+    font-family: 'Marcellus', serif;
+    padding: 2rem;
+    height: 100vh;
+    box-sizing: border-box;
+    color: #6b2d17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.iconPedido {
+    width: 40px;
+    height: 40px;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6b2d17;
+    font-family: 'Marcellus', serif;
+}
+
+.areaPrincipal {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.encomendas {
+    width: 250px;
+}
+
+.tituloSecao {
+    background-color: #ffe0c7;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #5c3c1e;
+}
+
+.icone {
+    color: #5c3c1e;
+}
+
+.botaoPedido {
+    display: flex;
+    align-items: center;
+    background-color: #ffe0c7;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    text-align: left;
+    color: #5c3c1e;
+    font-family: 'Marcellus', serif;
+}
+
+.botaoPedido:hover {
+    background-color: #b363356c;
+}
+
+.numero {
+    background-color: #d9b08c;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #5c3c1e;
+}
+
+.detalhes {
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.cartaoDetalhes {
+    background-color: #ffe8d1;
+    padding: 1.5rem;
+    border-radius: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #6b2d17;
+    font-family: 'Marcellus', serif;
+}
+
+.usuarioLogado {
+  background-color: #D2A679;     /* tom marrom escuro elegante */
+  color: #6b2d17;                /* bege claro para contraste */
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: 'Marcellus', serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d2a679;     /* borda dourada suave */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.usuarioLogado:hover {
+  transform: scale(1.05);
+}
+
+.topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}

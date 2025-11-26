@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbd3b3;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Marcellus', serif;
+    color: #6b2d17;
+    position: relative;
+}
+
+.iconArea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6b2d17;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+}
+
+.input,
+.textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5ede4;
+    color: #5c3c1e;
+    font-family: 'Marcellus', serif;
+    font-size: 1rem;
+}
+
+.textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.botao {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #6b2d17;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Marcellus', serif;
+}
+
+.botao:hover {
+    background-color: #5a2612;
+}
+
+.usuarioLogado {
+  background-color: #D2A679;     /* tom marrom escuro elegante */
+  color: #6b2d17;                /* bege claro para contraste */
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: 'Marcellus', serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d2a679;     /* borda dourada suave */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.usuarioLogado:hover {
+  transform: scale(1.05);
+}
+
+.topButtons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
